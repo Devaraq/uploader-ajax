@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploader DRAG AND DROP AJAX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+       
+
+        .drop-zone {
+            margin-left: auto;
+            margin-right: auto;
+            border: thick solid black;
+            width: 80%;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .drop-zone.is-active{
+            border: thick solid rgba(0, 128, 0, 0.551);
+            background-color: rgba(0, 128, 0, 0.059);
+            animation: pulse 1.5s infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes pulse {
+            0%,100%{
+                transform: scale(1);
+            }
+
+            50%{
+                transform: scale(1.1);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <article class="drop-zone hover ">
+            <p>Arrastra y Suelta tus archivo</p>
+        </article>
+
+
+    </main>
+    <script src="js/drag-and-drop.js"></script>
+</body>
+
+
+
+</html>
